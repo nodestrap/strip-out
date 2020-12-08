@@ -1,6 +1,5 @@
 /// removes a browser's default styling on hyperlink.
 @mixin link {
-    // colors & backgrounds:
     color: unset; // reset blue color
     text-decoration: unset; // reset underline
     cursor: unset; // reset hand pointer
