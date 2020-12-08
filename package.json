@@ -1,0 +1,29 @@
+{
+  "name": "@heymarco/strip-out",
+  "version": "1.0.0",
+  "description": "Removes any browser's default styling on a particular element.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyymarco/strip-out.git"
+  },
+  "keywords": [
+    "css",
+    "browser",
+    "user",
+    "agent",
+    "default",
+    "style",
+    "reset",
+    "reboot",
+    "remove"
+  ],
+  "author": "HeyMarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyymarco/strip-out/issues"
+  },
+  "homepage": "https://github.com/heyymarco/strip-out#readme"
+}

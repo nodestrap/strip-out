@@ -1,0 +1,59 @@
+/// removes a browser's default styling on hyperlink.
+@mixin link {
+    // colors & backgrounds:
+    color: unset; // reset blue color
+    text-decoration: unset; // reset underline
+    cursor: unset; // reset hand pointer
+
+    &:active {
+        color: unset; // reset blue color
+    }
+
+    &:focus {
+        outline: unset; // reset focus outline
+        outline-offset: unset; // reset focus outline
+    }
+}
+
+
+/// removes a browser's default styling on control (input, textarea, button, etc).
+@mixin control {
+    appearance:  none;
+
+    text-rendering: unset;
+    color: unset;
+    letter-spacing: unset;
+    word-spacing: unset;
+    text-transform: unset;
+    text-indent: unset;
+    text-shadow: unset;
+    text-align: unset;
+    background-color: unset;
+    cursor: unset;
+    margin: unset;
+    font: unset;
+    padding: unset;
+    border: unset;
+    box-sizing: unset;
+
+    &:focus {
+        outline: unset; // reset focus outline
+        outline-offset: unset; // reset focus outline
+    }
+}
+
+
+/// removes a browser's default styling on list (ul > li) & (ol > li).
+@mixin list {
+    list-style-type: none;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    padding-inline-start: unset;
+
+    > li {
+        display: inline;
+        text-align: unset;
+    }
+}
