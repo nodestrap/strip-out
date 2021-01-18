@@ -1,13 +1,17 @@
 {
-  "name": "@heymarco/strip-out",
+  "name": "@nodestrap/strip-out",
   "version": "1.0.0",
   "description": "Removes any browser's default styling on a particular element.",
+  "devDependencies": {
+    "tilde-sass": "^1.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tilde-sass --file test/*.scss --outFile test/",
+    "compile": "tilde-sass --file src/*.scss --outFile dist/ --outputStyle compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heyymarco/strip-out.git"
+    "url": "git+https://github.com/nodestrap/strip-out.git"
   },
   "keywords": [
     "css",
@@ -20,10 +24,10 @@
     "reboot",
     "remove"
   ],
-  "author": "HeyMarco",
+  "author": "nodestrap, heymarco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/heyymarco/strip-out/issues"
+    "url": "https://github.com/nodestrap/strip-out/issues"
   },
-  "homepage": "https://github.com/heyymarco/strip-out#readme"
+  "homepage": "https://github.com/nodestrap/strip-out#readme"
 }
