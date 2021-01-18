@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/strip-out",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Removes any browser's default styling on a particular element.",
   "devDependencies": {
     "tilde-sass": "^1.0.0"
