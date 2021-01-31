@@ -1,13 +1,24 @@
 {
   "name": "@nodestrap/strip-out",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Removes any browser's default styling on a particular element.",
+  "dependencies": {},
   "devDependencies": {
-    "tilde-sass": "^1.0.0"
+    "tilde-sass": "^1.0.1"
   },
   "scripts": {
-    "test": "tilde-sass --file test/*.scss --outFile test/",
-    "compile": "tilde-sass --file src/*.scss --outFile dist/ --outputStyle compressed"
+    "test": "tilde-sass --file test/*.scss --outFile test/ --mergeSelectors",
+    "test-watch": "tilde-sass --file test/*.scss --outFile test/ --mergeSelectors --watch",
+    "compile": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed",
+    "compile-watch": "tilde-sass --file src/*.scss --outFile dist/ --mergeSelectors --outputStyle compressed --watch"
+  },
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "calc": false
+      }
+    ]
   },
   "repository": {
     "type": "git",
